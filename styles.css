@@ -1,0 +1,14 @@
+body {
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+  background-color: #fdfbf7;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 10px;
+}

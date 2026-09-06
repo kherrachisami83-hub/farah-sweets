@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>فرح للحلويات الجزائرية - متجر وحاسبة المناسبات والوصفات</title>
+  
+  <!-- أيقونة الموقع (Favicon) -->
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <link rel="manifest" href="assets/manifest.json">
+
+  <!-- استدعاء المكتبات محلياً من مجلد assets -->
+  <script src="tailwind.js"></script>
+  <script src="react.production.min.js"></script>
+  <script src="react-dom.production.min.js"></script>
+  <script src="babel.min.js"></script>
+
+  <!-- الخطوط العربية: Cairo & Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- ربط ملف CSS الخارجي -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#fdfbf7]">
+
+  <div id="root"></div>
+
+  <!-- ربط ملف البرمجة JS الخارجي عبر Babel -->
+  <script type="text/babel" src="app.js"></script>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
+</body>
+</html>
